@@ -1,0 +1,60 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.38rem;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  min-height: 80px;
+}
+.header .header__title {
+  color: black;
+}
+.header .header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}
+.header .header__list .header__item {
+  margin-right: 1rem;
+}
+.header .header__list .header__item .header__button {
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  width: 109px;
+  height: 51px;
+  font-size: 18px;
+  color: black;
+}
+.header .header__list .header__item .header__create {
+  display: block;
+  color: #52c41a;
+  border: 1px solid #52c41a;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  padding-left: 8px;
+  line-height: 31px;
+  height: 31px;
+  width: 112px;
+  font-size: 14px;
+}
+.header .header__list .header__item .user__image {
+  width: 46px;
+  height: 46px;
+  margin-left: 1rem;
+}
+.header .header__list .header__item .header__avatar {
+  color: black;
+  line-height: 50px;
+}
+.header .header__list .header__item .button--black {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+
+/*# sourceMappingURL=headerLogin.css.map */

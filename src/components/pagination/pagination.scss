@@ -1,0 +1,19 @@
+.pagination {
+  width: 18%;
+  margin: 1rem auto 1rem auto;
+}
+.ant-pagination-item {
+  background-color: initial;
+  border: none;
+  transition: none;
+}
+.ant-pagination-item-active a {
+  color: white;
+  background-color: #1890ff;
+  border-radius: 5px;
+}
+.ant-pagination-next .ant-pagination-item-link,
+.ant-pagination-prev .ant-pagination-item-link {
+  background-color: initial;
+  border: none;
+}

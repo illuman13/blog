@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.38rem;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  min-height: 80px;
+}
+.header .header__title {
+  color: black;
+}
+.header .header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}
+.header .header__list .header__item {
+  margin-right: 1rem;
+}
+.header .header__list .header__item .header__button {
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  width: 109px;
+  height: 51px;
+  font-size: 18px;
+  color: black;
+}
+.header .header__list .header__item .button--green {
+  border: 1px solid #52c41a;
+  border-radius: 5px;
+  color: #52c41a;
+}
+
+/*# sourceMappingURL=headerUnLogin.css.map */

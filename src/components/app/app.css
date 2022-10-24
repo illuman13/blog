@@ -1,0 +1,22 @@
+h4 {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  background-color: initial;
+  cursor: pointer;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+.footer {
+  margin: 1.5rem 0;
+}
+
+/*# sourceMappingURL=app.css.map */

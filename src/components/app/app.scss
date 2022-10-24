@@ -1,0 +1,24 @@
+$bcGray: #e5e5e5;
+$fontsFamily: 'Inter', sans-serif;
+%fntFml {
+  font-family: $fontsFamily;
+  font-size: 18px;
+  line-height: 28px;
+}
+h4 {
+  margin: 0;
+}
+button {
+  border: 0;
+  background-color: initial;
+  cursor: pointer;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bcGray;
+}
+.footer {
+  margin: 1.5rem 0;
+}
