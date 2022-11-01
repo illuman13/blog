@@ -50,7 +50,7 @@ const ArticleList = ({
           <div className="article__container">
             <div className="article__header">
               <div className="title__container">
-                <Link to={`/${slug}`} className="title__name">
+                <Link to={`/articles/${slug}`} className="title__name">
                   {titleSlice(title)}
                 </Link>
                 <button
