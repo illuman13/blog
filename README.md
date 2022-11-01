@@ -1,2 +1,1 @@
-blog-gh7m.vercel.app
-Исправил изменение заголовка в форме редактирования/создания статьи
+blognew-kappa.vercel.app
