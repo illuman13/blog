@@ -24,6 +24,7 @@ const ArticleSingle = ({
   const setShowModalFn = () => setShowModal(false);
   const converts = new showdown.Converter();
   const { slug } = useParams();
+  const userName = JSON.parse(localStorage.getItem('user')) ? JSON.parse(localStorage.getItem('user')).username : '';
   useEffect(() => {
     asyncArticle(slug);
   }, [slug]);
@@ -98,7 +99,7 @@ const ArticleSingle = ({
               }}
             >
               <div className="article__main" dangerouslySetInnerHTML={{ __html: convertBody }} />
-              {JSON.parse(localStorage.getItem('user')).username !== arrayArticle.author.username ? null : renderLink}
+              {userName !== arrayArticle.author.username ? null : renderLink}
             </div>
           </div>
         </div>
