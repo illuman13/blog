@@ -26,10 +26,11 @@ const App = ({ login }) => {
       {login || local ? <HeaderLogin setLocalFn={setLocalFn} /> : <HeaderUnLogin />}
       <main>
         <Routes>
-          <Route path="/" element={<ArticleList />} />
+          <Route path="/" element={<Navigate to="/articles" replace />} />
+          <Route path="/articles" element={<ArticleList />} />
           <Route path="/new-article" element={<CreateArticle />} />
-          <Route path="/:slug/edit" element={<CreateArticle />} />
-          <Route path="/:slug" element={<ArticleSingle />} />
+          <Route path="/articles/:slug/edit" element={<CreateArticle />} />
+          <Route path="/articles/:slug" element={<ArticleSingle />} />
           <Route path="/sign-in" element={<LoginForm />} />
           <Route path="/sign-up" element={<SignUpForm />} />
           <Route path="/profile" element={<EditProfileForm />} />
