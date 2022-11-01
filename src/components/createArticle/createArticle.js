@@ -142,7 +142,7 @@ const CreateArticle = ({
     <>
       {!login && !JSON.parse(localStorage.getItem('user')) ? <Navigate to="/sign-in" /> : null}
       <div className={create.create}>
-        <h3>Create new article</h3>
+        <h3>{createBol ? 'Create new article' : 'Edit article'}</h3>
         <form className={create.create__form} onSubmit={handleSubmit(onSubmit)}>
           {completeCreate ? <div style={{ color: 'green' }}>post was successfully published</div> : null}
           {editArticle ? <div style={{ color: 'green' }}>post was successfully edited</div> : null}
