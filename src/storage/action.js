@@ -27,7 +27,7 @@ export const setCreateBolTrue = () => ({
 });
 export const setDelete = () => ({ type: 'SET__DELETE' });
 export const setTrueCompleteEdit = () => ({ type: 'SET__TRUE_COMPLETE_EDIT' });
-export const setFalseCompleteEdit = () => ({ type: 'SET__TRUE_COMPLETE_FALSE' });
+export const setFalseCompleteEdit = () => ({ type: 'SET__FALSE_COMPLETE_EDIT' });
 
 export const asyncSignUp = (user) => {
   return async (dispatch) => {
