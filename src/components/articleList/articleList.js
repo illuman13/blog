@@ -20,7 +20,7 @@ const ArticleList = ({
   stateDelete,
   asyncArticleDislike,
 }) => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(Number(localStorage.getItem('page')));
   useEffect(() => {
     asyncArticles(page);
     return () => resetLoader();
