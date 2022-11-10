@@ -7,9 +7,12 @@ export default class Pag extends Component {
       <Pagination
         className="pagination"
         defaultCurrent={1}
-        current={this.props.page}
+        current={Number(localStorage.getItem('page'))}
         total={50}
-        onChange={(value) => this.props.setPageFn(value)}
+        onChange={(value) => {
+          localStorage.setItem('page', String(value));
+          this.props.setPageFn(Number(localStorage.getItem('page')));
+        }}
       />
     );
   }
