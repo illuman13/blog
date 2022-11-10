@@ -41,6 +41,7 @@ const CreateArticle = ({
       reset();
       setTags([{ id: '1tag', value: '' }]);
     } else {
+      reset();
       setTags(RenderEditTags);
     }
   }, [createBol]);
@@ -141,11 +142,10 @@ const CreateArticle = ({
   return (
     <>
       {!login && !JSON.parse(localStorage.getItem('user')) ? <Navigate to="/sign-in" /> : null}
+      {completeCreate || editArticle ? <Navigate to="/" /> : null}
       <div className={create.create}>
         <h3>{createBol ? 'Create new article' : 'Edit article'}</h3>
         <form className={create.create__form} onSubmit={handleSubmit(onSubmit)}>
-          {completeCreate ? <div style={{ color: 'green' }}>post was successfully published</div> : null}
-          {editArticle ? <div style={{ color: 'green' }}>post was successfully edited</div> : null}
           <label htmlFor="">
             Title
             <input
@@ -186,7 +186,7 @@ const CreateArticle = ({
             <p>Tags</p>
             {RenderTags()}
           </label>
-          <input type="submit" className={create.create__submit} value="Create" />
+          <input type="submit" className={create.create__submit} value={createBol ? 'Create' : 'Edit'} />
         </form>
       </div>
     </>
